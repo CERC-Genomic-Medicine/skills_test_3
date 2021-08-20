@@ -12,7 +12,6 @@ ${VERIFY_BAM_ID_HOME}/VerifyBamID.Linux.x86-64 --SVDPrefix ${VERIFY_BAM_ID_HOME}
 
 The human genome reference file can be downloaded from [here](ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/technical/reference/GRCh38_reference_genome/GRCh38_full_analysis_set_plus_decoy_hla.fa).
 
-
 3. **Assigns most likely super population**. Using 4 Principal Components estimated by `VerifyBamID` and 4 Principal Components from the reference panel and labels from reference panel, assign most likely genetic ancestry for each individual.
 
 
