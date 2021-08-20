@@ -10,6 +10,9 @@ Given sequencing data for 10 individuals in CRAM file format (one file per indiv
 ${VERIFY_BAM_ID_HOME}/VerifyBamID.Linux.x86-64 --SVDPrefix ${VERIFY_BAM_ID_HOME}/resource/1000g.phase3.100k.b38.vcf.gz.dat --Reference Homo_sapiens.GRCh38.fa --BamFile `input/..` --NumPC 4 ...
 ```
 
+The human genome reference file can be downloaded from [here](ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/technical/reference/GRCh38_reference_genome/GRCh38_full_analysis_set_plus_decoy_hla.fa).
+
+
 3. **Assigns most likely super population**. Using 4 Principal Components estimated by `VerifyBamID` and 4 Principal Components from the reference panel and labels from reference panel, assign most likely genetic ancestry for each individual.
 
 
