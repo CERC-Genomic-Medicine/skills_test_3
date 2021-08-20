@@ -11,3 +11,12 @@ Given sequencing data for 10 individuals in CRAM file format (one file per indiv
 ```
 
 3. **Assigns most likely super population**. Using 4 Principal Components estimated by `VerifyBamID` and 4 Principal Components from the reference panel and labels from reference panel, assign most likely genetic ancestry for each individual.
+
+
+## Requirements
+
+To implement this workflow you may:
+- use any workflow system of your choice, which is compatible with HPC (e.g. [Nextflow](https://www.nextflow.io), [Snakemake](https://snakemake.readthedocs.io/en/stable/), [Luigi](https://github.com/spotify/luigi), [Cromwell](https://cromwell.readthedocs.io/en/stable/))
+- use any existing published open source sowtware tools and libraries (e.g. R and Python libraries for plotting such as matplotlib, ggplot)
+- use any scripting/programming language (or any combination of them) of your choice (e.g. Python, C/C++, Java, Perl, R, shell scripting)
+
