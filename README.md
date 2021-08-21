@@ -7,7 +7,7 @@ This repository stores input files, example output files, and description of the
 Given sequencing data for 10 individuals in CRAM file format (one file per individual) inside `input/` directory, implement an automatic workflow which for each indiviual:
 1. **Estimates DNA contamination**. To estimate DNA contamination levels, use the [VerifyBamID](https://github.com/Griffan/VerifyBamID) tool and 1000 Genome Project (1000g) GRCh38 reference panel, which is provided together with the `VerifyBamID` tool. Specify 4 Principal Components with the `--NumPC` option, e.g.:
 ```
-VerifyBamID.Linux.x86-64 --SVDPrefix ${VERIFY_BAM_ID_HOME}/resource/1000g.phase3.100k.b38.vcf.gz.dat --Reference GRCh38_full_analysis_set_plus_decoy_hla.fa --BamFile `input/..` --NumPC 4 ...
+VerifyBamID.Linux.x86-64 --SVDPrefix ${VERIFY_BAM_ID_HOME}/resource/1000g.phase3.100k.b38.vcf.gz.dat --Reference GRCh38_full_analysis_set_plus_decoy_hla.fa --BamFile `input/HGDP00082.GRCh38.low_coverage.cram` --NumPC 4 ...
 ```
 
 The human genome reference file can be downloaded from [here](ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/technical/reference/GRCh38_reference_genome/GRCh38_full_analysis_set_plus_decoy_hla.fa).
