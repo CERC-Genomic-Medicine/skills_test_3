@@ -20,7 +20,7 @@ Given sequencing data for 10 study individuals in CRAM file format (one file per
     ```
     , correspondingly.
     
-    This step will generate `*.Ancestry` and `*.selfSM` output files for each study individual. The DNA contamination values are stored in `*.selfSM` files in the *FREEMIX* column.
+    This step will generate `*.Ancestry` and `*.selfSM` output files for each study individual. The DNA contamination values are stored in `*.selfSM` files in the *FREEMIX* column. Create a new output file `Contamination.txt`, which stores a table with two tab-separated columns: SAMPLE -- sample name (i.e. HGDP00082, HGDP00450, ...), FREEMIX -- DNA contamination value from *FREEMIX* column in the corresponding `*.selfSM` file.
 
 2. **Visualizes estimated ancestry PCs**. The `${VERIFY_BAM_ID_HOME}/resource/1000g.phase3.100k.b38.vcf.gz.dat.V` file stores pre-computed 4 PCs for each individual in the 1000g reference panel, the `input/1000G_reference_populations.txt` file stores population labels (EUR, EAS, AMR, SAS, and AFR) for each individual in the 1000g reference panel, and the `*.Ancestry` files from the (1) workflow step store estimated PCs for 10 study individuals (*IntendedSample* column).
 
