@@ -47,7 +47,6 @@ Please, send us a single compressed archive which includes:
 ## Evaluation
 
 The following will be evaluated:
-1. The tool can be easily installed and run.
-2. The tool uses data structures and algorithms adequate for the problem i.e. ensure reasonable running time and memory usage.
-3. All requested INFO fields are present in the final output VCF files.
-4. Values in the requested INFO fields in the final output VCF files are correct.
+1. Workflow can be easily installed and run.
+2. `Contamination.txt` and `Populations.txt` files have all requested fields and their values are correct.
+4. Plots are readable (e.g. have adequate axis labels and scaled properly, colors are distinguishable, 10 study individuals can be clearly distinguished from the reference individuals).
